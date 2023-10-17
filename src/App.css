@@ -56,4 +56,5 @@ input:hover {
 
 .filter-container ul li:hover {
     background-color: rgb(185, 196, 207, .7);
+    border-radius: .5rem;
 }
