@@ -13,7 +13,7 @@ const FilterForm = ({contacts}) => {
   return (
     <div className='filter-container'>
       <input 
-      style={{width:'250px'}}
+      style={{width:'250px', height:'1.5rem'}}
         type="text"
         placeholder='Filter contact...'
         value={filterText}

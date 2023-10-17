@@ -8,7 +8,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 7rem;
+    width: 300px;
     margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(209, 226, 241, .5);
+    border-radius: 1rem;
+    box-shadow: 1rem;
 }
 
 .form {
@@ -27,5 +34,8 @@
 .filter-container ul li{
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: .2rem 1rem;
+    margin: .2rem 0;
+    background-color: rgb(185, 196, 207);
+    color: #ffffff;
 }

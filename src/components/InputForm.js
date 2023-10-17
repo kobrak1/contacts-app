@@ -22,7 +22,7 @@ const InputForm = ({addContact, contacts}) => {
     <form className='form' action="#" onSubmit={sendInfo}>
       <div className="name">
         <input 
-          style={{width:'250px'}}
+          style={{width:'250px', height:'1.5rem'}}
           type="text"
           name='fullname'
           value={form.fullname}
@@ -32,7 +32,7 @@ const InputForm = ({addContact, contacts}) => {
       <br />
       <div className="number">
         <input 
-          style={{width:'250px'}}
+          style={{width:'250px', height:'1.5rem'}}
           type="text"
           name='phone_number'
           value={form.phone_number}
