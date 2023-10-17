@@ -11,6 +11,10 @@ input {
     box-sizing: border-box;  
 }
 
+input:focus {
+    border: aqua;
+}
+
 .App {
     display: flex;
     flex-direction: column;
