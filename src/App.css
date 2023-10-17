@@ -51,4 +51,9 @@ input:hover {
     margin: .2rem 0;
     background-color: rgb(185, 196, 207);
     color: #ffffff;
+    transition: .2s ease;
+}
+
+.filter-container ul li:hover {
+    background-color: rgb(185, 196, 207, .7);
 }
