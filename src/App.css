@@ -3,6 +3,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+input {
+    width: 100%;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;  
+}
+
 .App {
     display: flex;
     flex-direction: column;
