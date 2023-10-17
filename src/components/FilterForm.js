@@ -20,7 +20,10 @@ const FilterForm = ({contacts}) => {
         onChange={e => setFilterText(e.target.value)} />
       <ul style={{display:'flex', flexDirection:'column', minHeight:'100px'}}>
         {filtered.map((person, i) => 
-          <li key={i}> {person.fullname} - {person.phone_number} </li>
+          <li key={i}> 
+            <span>{person.fullname}</span>
+            <span>{person.phone_number}</span> 
+          </li>
         )}
       </ul>
     </div>
