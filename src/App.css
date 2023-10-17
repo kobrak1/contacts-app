@@ -4,13 +4,16 @@
 }
 
 input {
+    height: 1.5rem;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box; 
     box-sizing: border-box;  
+    transition: .2s ease;
+    border-color: rgb(207, 205, 205);
 }
 
-input:focus {
-    border: aqua;
+input:hover {
+    background-color: rgb(234, 237, 237);
 }
 
 .App {
