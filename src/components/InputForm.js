@@ -1,29 +1,50 @@
 import React from 'react'
 import { useState } from 'react'
 
-const InputForm = () => {
-    const [form, setForm] = useState({'fullname':'', 'phone_number':''})
+const InputForm = ({addContact, contacts}) => {
+    const [form, setForm] = useState({fullname:'', phone_number:''})
+
+    // function that sets the current data
     const onChangeInput = (e => setForm({...form, [e.target.name]:e.target.value}))
+
+    // function that sets the main data
     const sendInfo = (e) => {
       e.preventDefault()
+      if (form.fullname === '' || form.phone_number === '') {
+        return alert('You have to fill both input fields.') && false
+      }
+      addContact([...contacts, form])
       console.log(form)
+      setForm({fullname:'', phone_number:''})
     }
 
   return (
     <form className='form' action="#" onSubmit={sendInfo}>
-      <input 
+      <div className="name">
+        <input 
+          style={{width:'250px'}}
           type="text"
           name='fullname'
+          value={form.fullname}
           onChange={onChangeInput}
           placeholder='Enter name...' />
-      <input 
+      </div>
+      <br />
+      <div className="number">
+        <input 
+          style={{width:'250px'}}
           type="text"
           name='phone_number'
+          value={form.phone_number}
           onChange={onChangeInput}
           placeholder='Enter number...' />
-      <input 
+      </div>
+      <br />
+      <div className="submitBtn">
+        <input 
           type="submit"
           value={'Add'} />
+      </div>
     </form>
     
   )
