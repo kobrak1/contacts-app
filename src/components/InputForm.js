@@ -45,8 +45,7 @@ const InputForm = ({addContact, contacts}) => {
           type="submit"
           value={'Add'} />
       </div>
-    </form>
-    
+    </form> 
   )
 }
 
